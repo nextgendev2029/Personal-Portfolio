@@ -60,7 +60,7 @@ endobj
 10 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://yourportfolio.com)
+/S /URI /Type /Action /URI (https://tuhin-dev-portfolio.vercel.app/)
 >> /Border [ 0 0 0 ] /Rect [ 389.2062 705.68 455.499 715.76 ] /Subtype /Link /Type /Annot
 >>
 endobj
@@ -148,7 +148,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author (\(anonymous\)) /CreationDate (D:20260424163450+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260424163450+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author (\(anonymous\)) /CreationDate (D:20260424171210+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260424171210+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
 >>
 endobj
@@ -177,25 +177,25 @@ xref
 0000001085 00000 n 
 0000001272 00000 n 
 0000001461 00000 n 
-0000001634 00000 n 
-0000001814 00000 n 
-0000002003 00000 n 
-0000002119 00000 n 
-0000002239 00000 n 
-0000002415 00000 n 
-0000002608 00000 n 
-0000002786 00000 n 
-0000002980 00000 n 
-0000003211 00000 n 
-0000003439 00000 n 
-0000003749 00000 n 
-0000003819 00000 n 
-0000004100 00000 n 
-0000004161 00000 n 
+0000001648 00000 n 
+0000001828 00000 n 
+0000002017 00000 n 
+0000002133 00000 n 
+0000002253 00000 n 
+0000002429 00000 n 
+0000002622 00000 n 
+0000002800 00000 n 
+0000002994 00000 n 
+0000003225 00000 n 
+0000003453 00000 n 
+0000003763 00000 n 
+0000003833 00000 n 
+0000004114 00000 n 
+0000004175 00000 n 
 trailer
 <<
 /ID 
-[<7ba3a790b8ed61188aede6a179baa178><7ba3a790b8ed61188aede6a179baa178>]
+[<8467322726aec16175c840d1ff68ea4a><8467322726aec16175c840d1ff68ea4a>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 23 0 R
@@ -203,5 +203,5 @@ trailer
 /Size 26
 >>
 startxref
-7974
+7988
 %%EOF

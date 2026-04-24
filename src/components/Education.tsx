@@ -91,10 +91,22 @@ export default function Education() {
                 <span className="shrink-0 mt-0.5 text-accent/60">
                   <BadgeIcon />
                 </span>
-                <div>
-                  <p className="text-[12px] font-medium text-foreground/80">
-                    {cert.title}
-                  </p>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center justify-between gap-4">
+                    <p className="text-[12px] font-medium text-foreground/80">
+                      {cert.title}
+                    </p>
+                    {cert.url && (
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="shrink-0 text-[10px] text-accent hover:text-accent/80 font-medium hover:underline transition-colors"
+                      >
+                        Click here &rarr;
+                      </a>
+                    )}
+                  </div>
                   <p className="mt-0.5 text-[11px] text-muted/50 leading-relaxed">
                     {cert.description}
                   </p>

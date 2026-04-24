@@ -121,10 +121,12 @@ export const certifications = [
   {
     title: "CodeChef Course Certificates",
     description: "4 courses completed: FOML, DSA, DBMS, AFD (Full MERN Stack)",
+    url: "https://drive.google.com/drive/folders/101XM65HYIEUKAPzGpXFcNKY6uX1b98iu?usp=sharing",
   },
   {
     title: "Flare Web3 Blockchain Bootcamp",
     description: "Completed bootcamp covering Web3 fundamentals and blockchain development",
+    url: "https://drive.google.com/drive/folders/1vfpIbU_OpqReg8XDSJ_3JB6zdI2BZhN4?usp=sharing",
   },
 ];
 
