@@ -22,7 +22,7 @@ export default function About() {
                 delay: i * 0.12,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-[13px] sm:text-sm text-muted/80 leading-[1.8]"
+              className="text-[13px] sm:text-sm text-muted leading-[1.8]"
             >
               {paragraph}
             </motion.p>
@@ -40,7 +40,7 @@ export default function About() {
             (trait) => (
               <span
                 key={trait}
-                className="px-3 py-1.5 text-[11px] font-medium text-muted/60 border border-border/50 rounded-md hover:border-border-hover hover:text-muted transition-all duration-300"
+                className="px-3 py-1.5 text-[11px] font-medium text-muted/80 border border-border/50 rounded-md hover:border-border-hover hover:text-foreground transition-all duration-300"
               >
                 {trait}
               </span>

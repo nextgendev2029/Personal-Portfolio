@@ -35,7 +35,7 @@ export default function Achievements() {
                 <h3 className="text-[13px] font-medium text-foreground/90 group-hover:text-foreground transition-colors duration-300">
                   {item.title}
                 </h3>
-                <p className="mt-1.5 text-[12px] text-muted/60 leading-relaxed">
+                <p className="mt-1.5 text-[12px] text-muted/80 leading-relaxed">
                   {item.description}
                 </p>
               </div>

@@ -61,7 +61,7 @@ function FeaturedCard({ project, index }: { project: (typeof projects)[0]; index
             Featured
           </span>
           {project.date && (
-            <span className="text-[10px] font-mono text-muted/40">
+            <span className="text-[10px] font-mono text-muted/70">
               {project.date}
             </span>
           )}
@@ -74,7 +74,7 @@ function FeaturedCard({ project, index }: { project: (typeof projects)[0]; index
           </h3>
 
           {/* Description */}
-          <p className="mt-3 text-[13px] text-muted/70 leading-[1.7] line-clamp-2">
+          <p className="mt-3 text-[13px] text-muted leading-[1.7] line-clamp-2">
             {project.description}
           </p>
 
@@ -107,7 +107,7 @@ function FeaturedCard({ project, index }: { project: (typeof projects)[0]; index
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 text-[12px] font-medium text-muted/70 hover:text-foreground border border-border/50 hover:border-border-hover rounded-lg transition-all duration-300 hover:-translate-y-px"
+              className="inline-flex items-center gap-2 px-4 py-2 text-[12px] font-medium text-muted hover:text-foreground border border-border/50 hover:border-border-hover rounded-lg transition-all duration-300 hover:-translate-y-px"
             >
               <GithubIcon />
               Source Code
@@ -143,7 +143,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           </h3>
           <div className="flex items-center gap-1.5 shrink-0 mt-0.5">
             {project.date && (
-              <span className="text-[10px] font-mono text-muted/40 mr-1">
+              <span className="text-[10px] font-mono text-muted/70 mr-1">
                 {project.date}
               </span>
             )}
@@ -171,7 +171,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
         </div>
 
         {/* Description */}
-        <p className="mt-2.5 text-[12px] text-muted/60 leading-[1.7] line-clamp-2 flex-1">
+        <p className="mt-2.5 text-[12px] text-muted/80 leading-[1.7] line-clamp-2 flex-1">
           {project.description}
         </p>
 
@@ -180,7 +180,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-2 py-0.5 text-[10px] font-mono text-muted/50 bg-background/50 border border-border/40 rounded-md"
+              className="px-2 py-0.5 text-[10px] font-mono text-muted/70 bg-background/50 border border-border/40 rounded-md"
             >
               {tag}
             </span>

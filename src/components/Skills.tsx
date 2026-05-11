@@ -33,14 +33,14 @@ export default function Skills() {
               }}
               className="group p-5 border border-border/50 rounded-xl hover:border-border-hover transition-all duration-300"
             >
-              <h3 className="text-[12px] font-mono font-medium uppercase tracking-[0.1em] text-muted/50 mb-3">
+              <h3 className="text-[12px] font-mono font-medium uppercase tracking-[0.1em] text-muted/70 mb-3">
                 {category.label}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {skills[category.key].map((skill) => (
                   <span
                     key={skill}
-                    className="px-2.5 py-1 text-[12px] text-muted/80 font-mono bg-background/50 border border-border/40 rounded-md hover:border-border-hover hover:text-foreground transition-all duration-300"
+                    className="px-2.5 py-1 text-[12px] text-muted font-mono bg-background/50 border border-border/40 rounded-md hover:border-border-hover hover:text-foreground transition-all duration-300"
                   >
                     {skill}
                   </span>

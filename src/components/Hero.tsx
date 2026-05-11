@@ -136,8 +136,8 @@ export default function Hero() {
       >
         {/* Status */}
         <motion.div variants={fadeUp} className="mb-8">
-          <span className="inline-flex items-center gap-2 px-3 py-1.5 text-[11px] font-medium text-muted/80 border border-border/60 rounded-full">
-            <span className="w-1.5 h-1.5 bg-emerald-400/80 rounded-full animate-pulse" />
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 text-[11px] font-medium text-muted border border-border/60 rounded-full">
+            <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
             Open to opportunities
           </span>
         </motion.div>
@@ -156,7 +156,7 @@ export default function Hero() {
           <p className="text-[15px] sm:text-base text-muted font-medium tracking-tight">
             {personalInfo.role}
           </p>
-          <span className="inline-flex items-center gap-1.5 text-[11px] text-muted/60">
+          <span className="inline-flex items-center gap-1.5 text-[11px] text-muted/80">
             <MapPinIcon />
             {personalInfo.location}
           </span>
@@ -165,7 +165,7 @@ export default function Hero() {
         {/* Tagline */}
         <motion.p
           variants={fadeUp}
-          className="mt-5 text-[13px] sm:text-sm text-muted/70 max-w-md mx-auto leading-relaxed"
+          className="mt-5 text-[13px] sm:text-sm text-muted max-w-md mx-auto leading-relaxed"
         >
           {personalInfo.tagline}
         </motion.p>
@@ -182,7 +182,7 @@ export default function Hero() {
               target={link.label === "Email" ? undefined : "_blank"}
               rel={link.label === "Email" ? undefined : "noopener noreferrer"}
               aria-label={link.label}
-              className="p-2.5 text-muted/60 hover:text-foreground border border-border/50 hover:border-border-hover rounded-lg transition-all duration-300 hover:bg-surface-hover hover:-translate-y-0.5"
+              className="p-2.5 text-muted hover:text-foreground border border-border/50 hover:border-border-hover rounded-lg transition-all duration-300 hover:bg-surface-hover hover:-translate-y-0.5"
             >
               {link.icon}
             </a>
@@ -204,7 +204,7 @@ export default function Hero() {
             href={personalInfo.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2 text-[13px] font-medium text-muted/80 hover:text-foreground border border-border/50 hover:border-border-hover rounded-lg transition-all duration-300 hover:-translate-y-px"
+            className="px-5 py-2 text-[13px] font-medium text-muted hover:text-foreground border border-border/50 hover:border-border-hover rounded-lg transition-all duration-300 hover:-translate-y-px"
           >
             Resume
           </a>
@@ -218,7 +218,7 @@ export default function Hero() {
             }
             animate={{ y: [0, 5, 0] }}
             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-            className="text-muted/30 hover:text-muted/60 transition-colors duration-300"
+            className="text-muted/50 hover:text-muted transition-colors duration-300"
             aria-label="Scroll down"
           >
             <ArrowDownIcon />

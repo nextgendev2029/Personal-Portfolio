@@ -71,7 +71,7 @@ export default function Contact() {
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="p-6 sm:p-8 border border-border/50 rounded-xl"
         >
-          <p className="text-[13px] text-muted/70 leading-[1.8] max-w-lg">
+          <p className="text-[13px] text-muted leading-[1.8] max-w-lg">
             I&apos;m open to internship opportunities, collaborations, and
             interesting conversations about tech. Feel free to reach out — I
             usually respond within a day.
@@ -90,7 +90,7 @@ export default function Contact() {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-[13px] font-medium text-muted/70 hover:text-foreground border border-border/50 hover:border-border-hover rounded-lg transition-all duration-300 hover:-translate-y-px"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-[13px] font-medium text-muted hover:text-foreground border border-border/50 hover:border-border-hover rounded-lg transition-all duration-300 hover:-translate-y-px"
             >
               Connect on LinkedIn
             </a>
@@ -98,7 +98,7 @@ export default function Contact() {
 
           {/* Social link row with icons */}
           <div className="mt-6 pt-6 border-t border-border/30">
-            <p className="text-[11px] font-mono uppercase tracking-[0.1em] text-muted/40 mb-4">
+            <p className="text-[11px] font-mono uppercase tracking-[0.1em] text-muted/60 mb-4">
               Find me on
             </p>
             <div className="flex flex-wrap gap-3">
@@ -109,7 +109,7 @@ export default function Contact() {
                   target={link.label === "Email" ? undefined : "_blank"}
                   rel={link.label === "Email" ? undefined : "noopener noreferrer"}
                   aria-label={link.label}
-                  className="inline-flex items-center gap-2 px-3 py-2 text-[12px] text-muted/60 hover:text-foreground border border-border/40 hover:border-border-hover rounded-lg transition-all duration-300 hover:bg-surface-hover hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-3 py-2 text-[12px] text-muted hover:text-foreground border border-border/40 hover:border-border-hover rounded-lg transition-all duration-300 hover:bg-surface-hover hover:-translate-y-0.5"
                 >
                   {link.icon}
                   <span>{link.text}</span>

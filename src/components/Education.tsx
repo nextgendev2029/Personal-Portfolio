@@ -60,7 +60,7 @@ export default function Education() {
                     {item.year}
                   </span>
                 </div>
-                <p className="mt-1 text-[12px] text-muted/60 leading-relaxed">
+                <p className="mt-1 text-[12px] text-muted/80 leading-relaxed">
                   {item.institution}
                 </p>
                 <span className="inline-block mt-2 px-2 py-0.5 text-[10px] font-mono text-emerald-400/80 bg-emerald-400/[0.05] border border-emerald-400/10 rounded-md">
@@ -79,7 +79,7 @@ export default function Education() {
           transition={{ duration: 0.4, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8"
         >
-          <h3 className="text-[12px] font-mono font-medium uppercase tracking-[0.1em] text-muted/50 mb-4">
+          <h3 className="text-[12px] font-mono font-medium uppercase tracking-[0.1em] text-muted/70 mb-4">
             Certifications
           </h3>
           <div className="space-y-2">
@@ -107,7 +107,7 @@ export default function Education() {
                       </a>
                     )}
                   </div>
-                  <p className="mt-0.5 text-[11px] text-muted/50 leading-relaxed">
+                  <p className="mt-0.5 text-[11px] text-muted/70 leading-relaxed">
                     {cert.description}
                   </p>
                 </div>
