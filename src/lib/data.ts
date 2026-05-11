@@ -12,7 +12,7 @@ export const personalInfo = {
   codechef: "https://www.codechef.com/users/tuhinp25",
   instagram: "https://www.instagram.com/tuhin.init.20/",
   twitter: "https://x.com/tuhinp_25",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/TuhinMondal_Resume.pdf",
 };
 
 export const aboutText = {
