@@ -46,7 +46,7 @@ export default async function ProjectPage({ params }: Props) {
 
         {/* Header */}
         <header className="mb-12">
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex flex-wrap items-center gap-3 mb-4">
             <Eyebrow>{project.date}</Eyebrow>
             <span className="text-border-strong">·</span>
             <Eyebrow>{project.category}</Eyebrow>
@@ -129,7 +129,7 @@ export default async function ProjectPage({ params }: Props) {
 
         {/* Adjacent project navigation */}
         {adjacent && (
-          <nav className="flex justify-between items-center" aria-label="Project navigation">
+          <nav className="flex flex-col sm:flex-row gap-6 sm:gap-4 justify-between items-start sm:items-center" aria-label="Project navigation">
             {adjacent.prev ? (
               <Link href={`/work/${adjacent.prev.slug}`} className="group flex items-center gap-2 text-foreground-muted hover:text-foreground transition-colors">
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />

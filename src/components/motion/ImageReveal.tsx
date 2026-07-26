@@ -29,17 +29,18 @@ export function ImageReveal({
   const prefersReducedMotion = useReducedMotion();
 
   if (prefersReducedMotion) {
-    return <div className={cn('overflow-hidden', className)}>{children}</div>;
+    return <div className={cn('relative w-full h-full overflow-hidden', className)}>{children}</div>;
   }
 
   const clip = clipPaths[direction];
 
   return (
-    <div className={cn('overflow-hidden', className)}>
+    <div className={cn('relative w-full h-full overflow-hidden', className)}>
       <motion.div
+        className="relative w-full h-full"
         initial={{ clipPath: clip.hidden }}
         whileInView={{ clipPath: clip.visible }}
-        viewport={{ once: true }}
+        viewport={{ once: true, margin: '-50px' }}
         transition={{
           duration,
           delay,

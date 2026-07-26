@@ -31,7 +31,7 @@ export default function ResumePage() {
         <header className="mb-8">
           <h1 className="font-sans text-2xl font-semibold text-foreground">{siteConfig.name}</h1>
           <p className="text-[length:var(--text-body)] text-foreground-muted mt-1">{siteConfig.title}</p>
-          <p className="font-mono text-[length:var(--text-label)] text-foreground-muted mt-2">
+          <p className="font-mono text-[length:var(--text-label)] text-foreground-muted mt-2 break-words">
             {siteConfig.location} · {siteConfig.email}
           </p>
         </header>

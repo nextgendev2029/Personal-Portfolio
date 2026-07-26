@@ -39,7 +39,7 @@ export function SelectedProject({ project, index, reversed = false }: SelectedPr
       {/* Text Side */}
       <div className="w-full md:w-1/2 flex flex-col items-start">
         <FadeIn>
-          <div className="flex items-center gap-4 mb-4">
+          <div className="flex flex-wrap items-center gap-4 mb-4">
             <span className="font-mono text-accent text-[length:var(--text-label)]">{number}</span>
             <Eyebrow>{project.date} • {project.category}</Eyebrow>
           </div>

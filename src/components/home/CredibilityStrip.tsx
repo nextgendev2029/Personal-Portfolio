@@ -21,7 +21,7 @@ export function CredibilityStrip() {
         </FadeIn>
         
         <FadeIn delay={0.2}>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-y-8 gap-x-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-y-8 gap-x-4">
             {metrics.map((metric, i) => (
               <div 
                 key={metric.label} 

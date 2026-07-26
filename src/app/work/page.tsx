@@ -26,7 +26,7 @@ export default function WorkPage() {
         <div className="space-y-12">
           {projects.map((project, index) => (
             <article key={project.slug} className="group">
-              <Link href={`/work/${project.slug}`} className="block p-6 -mx-6 rounded-[var(--radius-lg)] hover:bg-surface transition-colors duration-[var(--duration-normal)]">
+              <Link href={`/work/${project.slug}`} className="block p-6 -mx-4 sm:-mx-6 rounded-[var(--radius-lg)] hover:bg-surface transition-colors duration-[var(--duration-normal)]">
                 <div className="flex items-baseline gap-4 mb-3">
                   <Eyebrow>{String(index + 1).padStart(2, '0')}</Eyebrow>
                   <Eyebrow>{project.date}</Eyebrow>
