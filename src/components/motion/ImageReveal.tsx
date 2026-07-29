@@ -1,6 +1,7 @@
 'use client';
 
-import { motion, useReducedMotion } from 'framer-motion';
+import { useRef, useEffect, useState } from 'react';
+import { motion, useInView, useReducedMotion } from 'framer-motion';
 import { cn } from '@/lib/utils/cn';
 import { easings, durations } from '@/lib/utils/motion';
 
@@ -27,6 +28,20 @@ export function ImageReveal({
   duration = durations.reveal,
 }: ImageRevealProps) {
   const prefersReducedMotion = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, amount: 0.01 });
+  const [forceVisible, setForceVisible] = useState(false);
+
+  // Safety fallback: if IntersectionObserver fails on mobile,
+  // force the image visible after a timeout
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setForceVisible(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const shouldReveal = isInView || forceVisible;
 
   if (prefersReducedMotion) {
     return <div className={cn('relative w-full h-full overflow-hidden', className)}>{children}</div>;
@@ -35,15 +50,14 @@ export function ImageReveal({
   const clip = clipPaths[direction];
 
   return (
-    <div className={cn('relative w-full h-full overflow-hidden', className)}>
+    <div ref={ref} className={cn('relative w-full h-full overflow-hidden', className)}>
       <motion.div
         className="relative w-full h-full"
-        initial={{ clipPath: clip.hidden }}
-        whileInView={{ clipPath: clip.visible }}
-        viewport={{ once: true, margin: '-50px' }}
+        style={{ willChange: 'clip-path' }}
+        animate={{ clipPath: shouldReveal ? clip.visible : clip.hidden }}
         transition={{
           duration,
-          delay,
+          delay: isInView ? delay : 0,
           ease: easings.ease,
         }}
       >
